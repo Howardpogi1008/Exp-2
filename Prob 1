@@ -1,0 +1,76 @@
+#include <iostream>
+#include <conio.h>
+#include <string>
+ 
+using namespace std;
+
+int main()
+{
+	cout << " " << endl;
+	cout << " Experiment 2.1!!! " << endl;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+
+	int x, y;
+	char Type;
+
+	cout << " Subscription Packages: " << endl;
+	cout << "" << endl;
+	cout << " Package A: For P995/mo 10hrs of access are provided. " << endl;
+	cout << "" << endl;
+	cout << " Package B: For P1495/mo 20hrs of access are provided. " << endl;
+	cout << "" << endl;
+	cout << " Package C: For P1995/mo of unlimited access is provided. " << endl;
+	cout << "____________________________________________________________ " << endl;
+	cout << "" << endl;
+	cout << " Enter Package Letter: ";
+	cin >> Type;
+	cout << "____________________________________________________________ " << endl;
+	
+	switch (Type)
+	{
+		case 'A':
+		case 'a':		
+			cout << "" << endl;
+			cout << " You're now Subscribed to Package A " << endl;
+			cout << "____________________________________________________________ " << endl;
+			cout << "" << endl;
+			cout << " Input Additional Hours " << endl;
+			cout << " " << endl;
+			cout << " ";
+			cin >> x;
+			cout << "____________________________________________________________ " << endl;
+			cout << " ";
+			cout << " Total Amouont Due: " << (995 + (20 * x)) << endl;
+			break;
+		case 'B':
+		case 'b':
+			cout << "" << endl;
+			cout << " You're now Subscribed to Package B " << endl;
+			cout << "____________________________________________________________ " << endl;
+			cout << "" << endl;
+			cout << " Input Additional Hours " << endl;
+			cout << " " << endl;
+			cout << " ";
+			cin >> y;
+			cout << "____________________________________________________________ " << endl;
+			cout << " ";
+			cout << " Total Amouont Due: " << (1495 + (10 * y)) << endl;
+			break;
+		case 'C':
+		case 'c':
+			cout << "" << endl;
+			cout << " You're now Subscribed to Package C " << endl;
+			cout << "____________________________________________________________ " << endl;
+			cout << "" << endl;
+			cout << " Total Amount Due: " << (1995) << endl;
+			break;
+		default:
+			cout << " " << endl;
+			cout << " You're not Subscribe to any of the Packages: Please input the Package Letter. " << endl;
+			cout << "____________________________________________________________ " << endl;
+	}
+
+	_getch();
+	return 0;
+}
