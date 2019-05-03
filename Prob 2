@@ -1,0 +1,61 @@
+#include <iostream>
+#include <conio.h>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	cout << " " << endl;
+	cout << " Experiment 2.2!!! " << endl;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+
+	int x, y, z, Bill;
+
+	z = 35;
+
+	cout << " Current Water Bill:" << endl;
+	cout << " " << endl;
+	cout << " ";
+	cin >> Bill;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+	cout << "";	
+	cout << " Input How Many Gallons Used: " << endl;
+	cout << " " << endl;
+	cout << " ";
+	cin >> x;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+
+	cout << " Input Extra Charges: " << endl;
+	cout << " " << endl;
+	cout << " ";
+	cin >> y;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+
+	if (y > 0)
+
+	{
+		cout << " Total Water Bill: " << endl;
+		cout << " " << endl;
+		cout << " With Charges:" << endl;
+		cout << " ";
+		cout << (Bill + (z + (x * 1.1) + (y * 20))) << endl;
+		cout << "_______________________ " << endl;
+	}
+	else
+		cout << " Total Water Bill: " << endl;
+		cout << " " << endl;
+		cout << " Without Charges: " << endl;
+		cout << " ";
+		cout << (Bill + (z + (x * 1.1) )) << endl;
+		cout << "_______________________ " << endl;
+
+	
+
+	_getch();
+	return 0;
+}
