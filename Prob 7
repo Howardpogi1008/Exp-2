@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	cout << " " << endl;
-	cout << " Experiment 2.7!!! " << endl;
+	cout << " Experiment 2.6!!! " << endl;
 	cout << "______________________________________________ " << endl;
 	cout << " " << endl;
 
@@ -17,19 +17,29 @@ int main()
 	cin >> num1;
 	cout << " ";
 	cout << " " << endl;
-
-	for (int h = num1; h >= 1; h--)
+	if (num1 > 0)
 	{
-		num = num + h;
-	}
 
-	cout << " The sum of all whole numbers from 1 to " << num1 << " is: " << num << endl;
-	cout << " " << endl;
-	cout << "______________________________________________ " << endl;
-	cout << " " << endl;
+		for (int h = num1; h >= 1; h--)
+		{
+			num = num + h;
+		}
+
+		cout << " The sum of all whole numbers from 1 to " << num1 << " is: " << num << endl;
+		cout << " " << endl;
+		cout << "______________________________________________ " << endl;
+		cout << " " << endl;
+	}
+	else
+	{
+		cout << " Thank you " << endl;
+		cout << "______________________________________________ " << endl;
+		cout << " " << endl;
+	}
 
 	goto x;
 	
 	_getch();
 	return 0;
 }
+
