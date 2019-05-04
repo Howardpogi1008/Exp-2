@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int Start = 1;
+
+	cout << " " << endl;
+	cout << " Experiment 2.2!!! " << endl;
+	cout << "_________________________________________________________________________ " << endl;
+	cout << " " << endl;
+
+	cout << " Counting Starts with ... ";
+	cout << " ";
+	cin >> Start;
+	cout << "_________________________________________________________________________ " << endl; 
+	cout << " " << endl;
+	for (int h = 1; h<= 20; h++) {
+
+		if (h >= 10 )
+		{
+			cout << Start << ", ";
+			Start = Start + 2;
+		}
+		else 
+		{
+			cout << Start << ", ";
+			Start++;
+		}
+	}
+	_getch();
+	return 0;
+}
