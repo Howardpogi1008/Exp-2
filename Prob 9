@@ -1,0 +1,32 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	cout << " " << endl;
+	cout << " Experiment 2.9!!! " << endl;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+
+	int row = 0, col = 0;
+
+	cout << " Enter Row: ";
+	cin >> row;
+	cout << " Enter Columns ";
+	cin >> col;
+
+	for (int h = 0; h < row; h++)
+	{
+		cout << endl;
+
+		for (int h = 0; h < col; h++)
+		{
+			cout << " *";
+		}
+	}
+
+	_getch();
+	return 0;
+}
