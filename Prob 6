@@ -1,0 +1,39 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int h, h1= 0, h2= 1, nextnum;
+
+	cout << " " << endl;
+	cout << " Experiment 2.6!!! " << endl;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+	cout << " Fibonacci Sequence: ";
+
+	for (h = 1; h <= 30; ++h)
+	{
+		if (h == 1)s
+		{
+			cout << h1 << " , ";
+		}
+		else if (h == 2)
+		{
+			cout << h2 << " , ";
+		}
+		else
+		{
+			nextnum = h1 + h2;
+
+			h1 = h2;
+			h2 = nextnum;
+
+			cout << nextnum << " , ";
+		}
+	}
+
+	_getch();
+	return 0;
+}
