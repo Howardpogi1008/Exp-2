@@ -21,7 +21,7 @@ int main()
 	for (int h = 1; h <= 20; h++)
 	{
 		cout << " ";
-		cout << num << " * " << h << " * " << num * h << endl;
+		cout << num << " * " << h << " = " << num * h << endl;
 	}
 
 	_getch();
