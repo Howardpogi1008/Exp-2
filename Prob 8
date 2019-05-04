@@ -1,0 +1,29 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	cout << " " << endl;
+	cout << " Experiment 2.8!!! " << endl;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+
+	int num;
+
+	cout << " Enter Number To Find Its Multiplication Table: ";
+	cin >> num;
+	cout << " " << endl;
+	cout << " Multiplication Table of: " << num << endl;
+	cout << " " << endl;
+
+	for (int h = 1; h <= 20; h++)
+	{
+		cout << " ";
+		cout << num << " * " << h << " * " << num * h << endl;
+	}
+
+	_getch();
+	return 0;
+}
