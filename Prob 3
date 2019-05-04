@@ -1,0 +1,77 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	cout << " " << endl;
+	cout << " Experiment 2.3!!! " << endl;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+
+	int X, Y;
+	double V, Z;
+
+	Z = 2.5;
+
+	cout << " Input the value of X " << endl;
+	cout << " " << endl;
+	cout << " ";
+	cin >> X;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+
+	cout << " Input the value of Y " << endl;
+	cout << " " << endl;
+	cout << " ";
+	cin >> Y;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+
+	if ( X > 0 && X < 3 )
+	{
+		switch (X)
+		{
+		case 1:
+			if ( Y > 1 && Y < 5 )
+			{
+				V = X * Y * Z;
+				cout << " V = ";
+				cout << V;
+			}
+			else
+			{
+				V = (( X + Y ) / Z );
+				cout << " V = ";
+				cout << V;
+			}
+			break;
+		case 2:
+			if (Y <= 5)
+			{
+				V = ( X - ( sqrt ( Y + Z )));
+				cout << " V = ";
+				cout << V;
+			}
+			else
+			{
+				V = (( X - Y ) / Z);
+				cout << " V = ";
+				cout << V;
+			}
+			break;
+		}
+	}
+	else
+	{
+		V = X + Y + Z;
+
+		cout << " V = ";
+		cout << V;
+	}
+
+	_getch();
+	return 0;
+}
