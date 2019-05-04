@@ -1,0 +1,84 @@
+#include <iostream>
+#include <string>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	cout << " " << endl;
+	cout << " Experiment 2.4!!! " << endl;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+
+	double A, B, C;
+
+	cout << " Input First Number: " << endl;
+	cout << " " << endl;
+	cout << " ";
+	cin >> A;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+	cout << " Input Second Number: " << endl;
+	cout << " " << endl;
+	cout << " ";
+	cin >> B;
+	cout << "______________________________________________ " << endl;
+	cout << " " << endl;
+	cout << " Input Third Number: " << endl;
+	cout << " " << endl;
+	cout << " ";
+	cin >> C;
+	cout << "______________________________________________ " << endl;
+
+	cout << " " << endl;
+
+	if (!cin) 
+	{
+		cout << " Syntax Error: Please Input a Number. " << endl;
+		cout << "______________________________________________ " << endl;
+	}
+	else if (A > B && A > C)
+	{
+		cout << " The Largest number among the three is: ";
+		cout << " ";
+		cout << " ";
+		cout << A << endl;
+		cout << "______________________________________________ " << endl;
+	}
+	else if (B > C && B > A)
+	{
+		cout << " The Largest number among the three is: ";
+		cout << " ";
+		cout << B << endl;
+		cout << "______________________________________________ " << endl;
+	}
+	else if (C > A && C > B)
+	{
+		cout << " The Largest number among the three is: ";
+		cout << " ";
+		cout << C << endl;
+		cout << "______________________________________________ " << endl;
+	}
+	else if (A > B && B < C)
+	{
+		cout << " Two Numbers are Equal and Larger " << endl;
+		cout << "______________________________________________ " << endl;
+	}
+	else if (B > A && A < C)
+	{
+		cout << " Two Numbers are Equal and Larger " << endl;
+		cout << "______________________________________________ " << endl;
+	}
+	else if (A > C && C < B)
+	{
+		cout << " Two Numbers are Equal and Larger " << endl;
+		cout << "______________________________________________ " << endl;
+	}
+	else
+	{
+		cout << " All of them are Equal " << endl;
+		cout << "______________________________________________ " << endl;
+	}
+	_getch();
+	return 0;
+} 
