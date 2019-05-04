@@ -15,7 +15,7 @@ int main()
 
 	for (h = 1; h <= 30; ++h)
 	{
-		if (h == 1)s
+		if (h == 1)
 		{
 			cout << h1 << " , ";
 		}
